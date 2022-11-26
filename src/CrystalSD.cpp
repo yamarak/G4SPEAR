@@ -88,7 +88,9 @@ G4bool CrystalSD::ProcessHits(G4Step* aStep, G4TouchableHistory*)
 
 	// Add values
 	hit->Add(edep, edep);
-	hitTotal->Add(edep, edep);
-
+	if (hit && hitTotal)
+		if (!(*hit == *hitTotal))
+			hitTotal->Add(edep, edep);
+	
 	return true;
 }

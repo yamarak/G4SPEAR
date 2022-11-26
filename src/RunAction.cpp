@@ -56,14 +56,14 @@ RunAction::RunAction()
 	// Creating histograms
 	analysisManager->CreateH1("Edep",
 							  "Energy Deposition in crystal",
-							  4096,
-							  0.0,
-							  753.664 * keV);
+							  400,
+							  18.4 * keV,
+							  754.4 * keV);
 	analysisManager->CreateH1("Spec",
 							  "Spectrum in crystal",
-							  4096,
-							  0.0,
-							  753.664 * keV);
+							  400,
+							  18.4 * keV,
+							  754.4 * keV);
 
 	// Creating ntuple
 	analysisManager->CreateNtuple("spear", "Edep and Spectrum");
