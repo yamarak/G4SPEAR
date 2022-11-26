@@ -56,11 +56,6 @@ public:
 	void Draw() override {}
 	void Print() override;
 
-	// Set methods
-
-	void SetEdep(G4double de) { fEdep = de; }
-	void SetChan(G4double ch) { fChan = ch; }
-
 	// Methods to handle data
 
 	void Add(G4double de, G4double ch) { fEdep += de; fChan += ch; }

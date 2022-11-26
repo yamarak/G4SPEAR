@@ -33,6 +33,7 @@
 #define PRIMARYGENERATORACTION_H
 
 #include <G4VUserPrimaryGeneratorAction.hh>
+#include <G4ParticleGun.hh>
 #include <G4GeneralParticleSource.hh>
 
 class PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
