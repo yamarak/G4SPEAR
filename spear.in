@@ -1,0 +1,10 @@
+# Macro file for example spear test
+
+/run/initialize
+
+# gamma 661.657 keV to the direction (1.0,0.0,0.0)
+/gps/particle gamma
+/gps/ene/mono 661.657 keV
+/gps/direction 1.0 0.0 0.0
+/gps/pos/centre -1.0 0.0 0.0 cm
+/run/beamOn 10000

@@ -1,0 +1,16 @@
+# Macro file for example spear
+# 
+# To be run preferably in batch, without graphics:
+# % spear run2.mac
+#
+/run/useMaximumLogicalCores
+#
+/run/initialize
+# 
+# gamma 661.657 keV to the direction (1.0,0.0,0.0)
+#
+/gps/particle gamma
+/gps/energy 661.657 keV
+/gps/direction 1.0 0.0 0.0
+/gps/pos/centre -1.0 0.0 0.0 cm
+/run/beamOn 40000

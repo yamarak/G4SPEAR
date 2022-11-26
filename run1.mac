@@ -1,0 +1,19 @@
+# Macro file for example spear
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+# Set the number of threads to be the number of available logical cores
+# (in multi-threaded mode)
+#/run/useMaximumLogicalCores
+#
+# Initialize kernel
+/run/initialize
+# 
+# gamma 661.657 keV to the direction (1.0,0.0,0.0)
+#
+/gps/particle gamma
+/gps/ene/mono 661.657 keV
+/gps/direction 1.0 0.0 0.0
+/gps/pos/centre -1.0 0.0 0.0 cm
+/run/beamOn 20
